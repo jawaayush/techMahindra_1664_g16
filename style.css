@@ -66,6 +66,7 @@ body{
     display: flex;
     list-style: none;
 }
+
 .footer_links_ul li{
     margin: 0 1rem;
 }
