@@ -188,7 +188,6 @@
   }
 
   .myProfile-container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     background-color: rgb(73, 125, 116);
@@ -275,4 +274,23 @@
   }
   .projects-container-description p{
     background-color: rgb(73, 125, 116);
+    padding: 10px 0px 10px 20px;
+  }
+
+
+
+  @media  screen and (min-width: 700px) {
+    .myProfile-container {
+      height: 100vh;
+    }
+    
+  }
+
+  @media screen and (max-width:650px) {
+    .projects-container {
+      flex-direction: column;
+    }  
+    .projects-container-heading {
+      font-size: 30px;
+    }
   }
