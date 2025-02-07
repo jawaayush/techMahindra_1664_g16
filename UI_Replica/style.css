@@ -39,7 +39,6 @@ body {
 }
 
 .description {
-    border: 2px solid red;
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -73,7 +72,6 @@ body {
     justify-content: center;
     gap: 150px;
     margin: 40px 0;
-    border: 2px solid salmon;
 }
 
 .stats div {
@@ -126,6 +124,7 @@ body {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
 }
 
 .join {
@@ -137,17 +136,72 @@ body {
     color: #fff;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 385px;
 }
 
-.newsletter input {
-    padding: 10px;
+.footer_newsletter input {
+    padding: 14px;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
 }
 
-.newsletter button {
-    display: block;
-    margin: 10px auto;
+.footer_newsletter button {
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.footer-content, .footer_newsletter {
+    max-width: 350px;
+    text-align: left;
+}
+
+.footer_newsletter img {
+    width: 180px;
+}
+
+.footer-content_email, .footer-content_phone {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content_email img, .footer-content_phone img{
+    margin-right: 10px;
+}
+
+@media  screen and (max-width:650px) {
+    .description_body-heading {
+        font-size: 24px;
+    }
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_flex {
+        flex-direction: column-reverse;
+    }
+    .content02 {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+    .footer_newsletter {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .footer_newsletter button {
+        margin-top: 10px;
+        width: max-content;
+        align-self: flex-end;
+    }
+    .content_note {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+
+    }
 }
