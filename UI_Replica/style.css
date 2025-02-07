@@ -139,7 +139,8 @@ body {
     justify-content: center;
     gap: 385px;
 }
-.footer-content img {
+
+.footer-content >img {
     width: 180px;
 }
 .footer_newsletter input {
@@ -158,6 +159,7 @@ body {
     max-width: 350px;
     text-align: left;
 }
+
 
 
 .footer-content_email, .footer-content_phone {
