@@ -139,7 +139,9 @@ body {
     justify-content: center;
     gap: 385px;
 }
-
+.footer-content img {
+    width: 180px;
+}
 .footer_newsletter input {
     padding: 14px;
     margin-top: 10px;
@@ -157,9 +159,6 @@ body {
     text-align: left;
 }
 
-.footer_newsletter img {
-    width: 180px;
-}
 
 .footer-content_email, .footer-content_phone {
     display: flex;
