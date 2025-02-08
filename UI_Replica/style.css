@@ -1,13 +1,15 @@
-
-
 body {
-    font-family: Arial, sans-serif;
+    
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #ffffff;
 }
-
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
 .nav {
     padding: 20px;
     display: flex;
@@ -80,7 +82,8 @@ body {
     align-items: flex-start;
 }
 .stats div img {
-    size: 100px;
+    width: 50px;
+    height: auto;
 }
 .stats h2{
     margin: 0;
@@ -121,7 +124,7 @@ body {
 
 .wave{
     margin-bottom: -5px;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     line-height: 0;
 
@@ -141,19 +144,27 @@ body {
 }
 
 .footer-content >img {
-    width: 180px;
+    width: 70%;
 }
+
+
 .footer_newsletter input {
-    padding: 14px;
-    margin-top: 10px;
+
+    padding: 10px;
+    border: 1px solid hsl(192, 100%, 9%);
     border-radius: 5px;
-    border: none;
 }
 
 .footer_newsletter button {
-    border-radius: 10px;
-    margin: 0 10px;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
 }
+
 
 .footer-content, .footer_newsletter {
     max-width: 350px;
@@ -170,14 +181,24 @@ body {
 .footer-content_email img, .footer-content_phone img{
     margin-right: 10px;
 }
+.mobile {
+    display: none;
+}
+.wave img{
+    width: 100%;
+    overflow: hidden;
+}
 
-@media  screen and (max-width:650px) {
+@media  screen and (max-width:750px) {
     .description_body-heading {
         font-size: 24px;
     }
     .stats {
         flex-direction: column;
         align-items: center;
+    }
+    .stats h2 {
+        font-size: 50px;
     }
     .content_flex {
         flex-direction: column-reverse;
@@ -203,6 +224,11 @@ body {
         text-align: center;
         width: 100%;
         padding: 0;
-
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
     }
 }
